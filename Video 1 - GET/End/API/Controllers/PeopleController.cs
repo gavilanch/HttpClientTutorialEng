@@ -22,10 +22,10 @@ namespace API.Controllers
         [HttpGet]
         public async Task<ActionResult<List<Person>>> Get()
         {
-            //return NotFound();
-            //return new List<Person>() { new Person() { Id = 1, Name = "Felipe"},
-            //new Person(){Id = 2, Name = "Claudia"}};
-            return await context.People.ToListAsync();
+            return NotFound();
+            return new List<Person>() { new Person() { Id = 1, Name = "Felipe"},
+            new Person(){Id = 2, Name = "Claudia"}};
+            //return await context.People.ToListAsync();
         }
     }
 }
